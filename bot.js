@@ -1,6 +1,6 @@
 client.on('message', message => {
     let args = message.content.split(' ').slice(1).join(' ');
-    if (message.content.startsWith('$bc-bot')){
+    if (message.content.startsWith('$bc')){
     if(!message.author.id === '') return;
     message.channel.sendMessage('جار ارسال الرسالة :white_check_mark:')
     client.users.forEach(m =>{
@@ -8,4 +8,5 @@ client.on('message', message => {
     })
     }
     });
-client.login(process.env.BOT_TOKEN);
+    
+    client.login(process.env.BOT_TOKEN); 
